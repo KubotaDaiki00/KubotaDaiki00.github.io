@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    overflow: hidden;
+    background-image: url("../img/background.png");
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    width: 100vw;
+    height: 200px;
+}
+
+header:before {
+    position: absolute;
+    z-index: -1;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    left: -3px;
+    background: inherit;
+    content: "";
+    -moz-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+}
+
+section {
+    padding: 20px 15%;
+}
+
+h1 {
+    padding: 80px 18%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    color: #f8f8f8;
+    text-align: right;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
